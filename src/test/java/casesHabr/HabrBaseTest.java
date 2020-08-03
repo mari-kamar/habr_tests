@@ -26,7 +26,7 @@ public class HabrBaseTest {
             driver = factory.createDriver(browser, options);
         }
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
     @After
