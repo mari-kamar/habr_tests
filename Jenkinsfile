@@ -16,14 +16,13 @@ pipeline {
       stage('clean') {
          steps {
              echo 'tests execution'
-             sh 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64'
+            /*  sh 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64'
              sh 'curl -N https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_mac64.zip -P ~/'
              sh 'gzip -d ~/chromedriver_mac64.zip'
              sh 'rm ~/chromedriver_mac64.zip'
              sh 'mv -f ~/chromedriver /usr/local/bin/chromedriver'
              sh 'chown root:root /usr/local/bin/chromedriver'
-             sh 'chmod 0755 /usr/local/bin/chromedriver'
-             sh 'mvn clean'
+             sh 'chmod 0755 /usr/local/bin/chromedriver' */
              sh 'mvn clean'
          }
       }
